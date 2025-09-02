@@ -13,7 +13,7 @@ The detector node leverages [lib-dt-apriltags](https://github.com/duckietown/lib
 
 For this demo, we only check for a single family 'tag36h11', however this can be extended for any [supported family](https://github.com/AprilRobotics/apriltag-imgs).
 
-The pose generated for every tag comes from the lib-dt-apriltags library, but can easily be sent as messages using <THE APRILTAG REPO>. Below is the message used for indicating apriltags are present:
+The pose generated for every tag comes from the lib-dt-apriltags library, but can easily be sent as messages using [apriltags_msgs](https://github.com/Katie-BL/apriltags_msgs.git). Below is the message used for indicating apriltags are present:
 
 ```
 AprilTagPose[] detections
@@ -36,12 +36,12 @@ This repo was created to be cloned within an existing ROS 2 workspace. We assume
 
 Clone this repo
 ```
-git clone <YOUR REPO NAME>
+git clone https://github.com/Katie-BL/vision.git
 ```
 
 Clone the repo containing AprilTags msgs
 ```
-git clone <THE APRILTAG REPO>
+git clone https://github.com/Katie-BL/apriltags_msgs.git
 ```
 
 Since opencv uses a different version of numpy than dt-apriltags, we opt for system installation of dependencies. Although this requires BREAK_SYSTEM_PACKAGES, it was the easiest to work with.
